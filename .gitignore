@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+data/
+cloned_voices/
+*.wav
+*.mp3
+.env
+.venv
+venv/
