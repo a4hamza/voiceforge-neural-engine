@@ -4,7 +4,8 @@
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {}
   },
-  "postCreateCommand": "pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu torch torchaudio && pip install -r requirements.txt",
+  "postCreateCommand": "pip install --no-cache-dir pocket-tts fastapi uvicorn scipy safetensors python-multipart",
+  "postStartCommand": "nohup python app.py > /tmp/voiceforge.log 2>&1 &",
   "portsAttributes": {
     "7860": {
       "label": "VoiceForge API",
